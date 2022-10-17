@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TW-F02-EX13</title>
+</head>
+
+<body>
+  <form action="index.html" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Age</legend>
+        <label for="age-0-18">&lt;18</label>
+        <input type="radio" name="age" id="age-0-18" value="-18">
+
+        <label for="age-19-35">19-35</label>
+        <input type="radio" name="age" id="age-19-35" value="19-35">
+
+        <label for="age-36-48">36-48</label>
+        <input type="radio" name="age" id="age-36-48" value="36-48">
+
+        <label for="age-plus-49">&gt;49</label>
+        <input type="radio" name="age" id="age-plus-49" value="49+">
+      </fieldset>
+    </div>
+
+    <div>
+      <label for="profession">Profession:</label>
+      <input type="text" name="profession" id="profession">
+
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option value="portugal">Portugal</option>
+        <option value="spain">Spain</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="greece">Greece</option>
+      </select>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Interests</legend>
+
+        <label for="photography">Photography</label>
+        <input type="checkbox" name="interest" id="photography" value="photography">
+
+        <label for="music">Music</label>
+        <input type="checkbox" name="interest" id="music" value="music">
+
+        <label for="cinema">Cinema</label>
+        <input type="checkbox" name="interest" id="cinema" value="cinema">
+
+        <label for="computers">Computers</label>
+        <input type="checkbox" name="interest" id="computers" value="computers">
+      </fieldset>
+    </div>
+
+    <div>
+      <label for="how"> How did you find us:</label>
+      <textarea name="how" id="how" cols="40" rows="5"></textarea>
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+
+  </form>
+</body>
+
+</html>

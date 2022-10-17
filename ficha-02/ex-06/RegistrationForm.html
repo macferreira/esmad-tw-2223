@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TW-F02-EX06</title>
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <form method="post" action="https://www.webucator.com/materials/htm101/">
+    <div>
+      <input type="hidden" name="emailMe" id="emailMe" value="you@you.com">
+
+      <label for="username">User name:</label>
+      <input type="text" name="username" id="username" size="15">
+    </div>
+    <div>
+      <label for="pw">Password:</label>
+      <input type="password" name="pw" id="pw" size="15">
+    </div>
+    <div>
+      Gender:
+      <input type="radio" name="gender" id="genderm" value="m"><label for="genderm">Male</label>
+      <input type="radio" name="gender" id="genderf" value="f"><label for="genderf">Female</label>
+    </div>
+    <div>
+      <label for="terms">Click to accept our terms:</label>
+      <input type="checkbox" name="terms" id="terms">
+    </div>
+    <div>
+      <label for="referral">Where did you hear about us?</label>
+      <select name="referral" id="referral">
+        <option value="0">--Please choose--</option>
+        <optgroup label="Search Engine">
+          <option value="Google">Google</option>
+          <option value="Yahoo">Yahoo!</option>
+          <option value="MSN">MSN</option>
+          <option value="OtherSearchEngine">Other</option>
+        </optgroup>
+        <option value="wom">Word of Mouth</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="comments">Comments:</label><br>
+      <textarea name="comments" id="comments" cols="40" rows="4"></textarea>
+    </div>
+    <div>
+      <input type="submit" name="submitbutton" id="submitbutton" value="Register">
+      <input type="reset" name="resetbutton" id="resetbutton">
+    </div>
+  </form>
+</body>
+
+</html>
