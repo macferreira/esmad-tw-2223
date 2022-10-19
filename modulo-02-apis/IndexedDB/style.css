@@ -1,0 +1,10 @@
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.box {
+  float: left;
+  padding: 0;
+  width: 50%;
+}

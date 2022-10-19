@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+.ws {
+  width: 200px;
+}
