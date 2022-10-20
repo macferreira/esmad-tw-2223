@@ -5,27 +5,25 @@ window.onload = () => {
     .getElementById('save-to-storage')
     .addEventListener('click', (e) => {
       e.preventDefault();
-      // guardar variável com o valor do campo name
-      const nome = document.getElementById('name').value;
-      // guardar variável com o valor do campo phone
-      const telefone = document.getElementById('phone').value;
-      // guardar na chave nome, o valor telefone
-      localStorage.setItem(nome, telefone);
-      // escrever na div resultado 'Nome da pessoa' guardado
-      document.getElementById('resultado').innerHTML = `${nome} guardado.`;
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      localStorage.setItem(name, phone);
+      document.getElementById('result').innerHTML = `${nome} saved.`;
     });
 
   document
     .getElementById('get-from-storage')
     .addEventListener('click', (e) => {
       e.preventDefault();
-      /* percorrer todos os items exsitentes no localStorage,
-      e imprimir nome[telefone] para a div resultados */
-      let lista = '';
+      /*
+       * Iterate all items tha exsit in the localStorage,
+       * and print name[phone] to the div results
+       */
+      let list = '';
       for (let i = 0; i < localStorage.length; i += 1) {
         console.log(`${localStorage.key(i)}=[${localStorage.getItem(localStorage.key(i))}]`);
-        lista += `${localStorage.key(i)}=[${localStorage.getItem(localStorage.key(i))}]<br>`;
+        list += `${localStorage.key(i)}=[${localStorage.getItem(localStorage.key(i))}]<br>`;
       }
-      document.getElementById('resultado').innerHTML = lista;
+      document.getElementById('result').innerHTML = list;
     });
 };

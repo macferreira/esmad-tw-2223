@@ -1,7 +1,6 @@
-// seleccionar todos os elementos com a class .box
 const boxes = document.querySelectorAll('.box');
 
-// global para guadar quem está ser arrastado
+// global to store what is being dragged
 let draggedElem = null;
 
 const printMessage = function printMessage(msg) {
@@ -10,13 +9,12 @@ const printMessage = function printMessage(msg) {
   }`;
 };
 
-// callback a definir para o evento dragstart
+// callback for the event dragstart
 const dragStartEvent = function dragStartEvent(event) {
   this.style.color = 'blue';
-  // guadar o elemento que está ser arrastado
+  // store the element being dragged
   draggedElem = this;
 
-  // guardar os dados que queremos transferir
   event.dataTransfer.setData('text/html', this.innerHTML);
   printMessage(`dragStartEvent on ${event.target.id}!`);
 };
@@ -24,7 +22,7 @@ const dragStartEvent = function dragStartEvent(event) {
 const dragEndEvent = function dragEndEvent(event) {
   this.style.color = 'white';
 
-  // remover as classes, uma vez que o leave pode não ser chamado, qd fazemos drop do elemento
+  // remove classes, leave may not be called when we drop the element
   [].forEach.call(boxes, (box) => {
     box.classList.remove('over');
   });
@@ -38,7 +36,7 @@ const dragEnterEvent = function dragEnterEvent() {
 };
 
 const dragOverEvent = function dragOverEvent(event) {
-  // obrigatório, caso contrário não deixa fazer o drop
+  // needed, if not we cannot do the element drop
   event.preventDefault();
   printMessage(`dragOverEvent on ${this.getAttribute('id')}`);
 };
@@ -49,10 +47,9 @@ const dragLeaveEvent = function dragLeaveEvent() {
 };
 
 const dropEvent = function dropEvent(event) {
-  // evita a propagação do evento do DOM
   event.stopPropagation();
 
-  // verificar se estamos a fazer drop no próprio elemento
+  // verify if we are droping the element in itself
   if (draggedElem !== this) {
     draggedElem.innerHTML = this.innerHTML;
     this.innerHTML = event.dataTransfer.getData('text/html');
@@ -63,7 +60,6 @@ const dropEvent = function dropEvent(event) {
 };
 
 window.onload = () => {
-  // cast do boxes (que é NodeList) para Array para usar o forEach
   [].forEach.call(boxes, (box) => {
     box.addEventListener('dragstart', dragStartEvent, false);
     box.addEventListener('dragover', dragOverEvent, false);

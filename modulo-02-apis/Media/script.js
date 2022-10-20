@@ -10,12 +10,11 @@ const errorCallback = (event) => {
 
 navigator.getUserMedia(
   {
-    video: true, // indicar que queremos video
+    video: true,
   },
   (stream) => {
-    // seleccionar o video do DOM
     const videoPlayer = document.getElementById('my-video');
-    // definir a source do video
+    // define video source
     try {
       videoPlayer.srcObject = stream;
     } catch (error) {
