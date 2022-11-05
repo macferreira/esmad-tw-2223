@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.example {
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    width: 800px;
+}

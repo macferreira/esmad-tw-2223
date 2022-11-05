@@ -1,0 +1,66 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+}
+
+.box {
+  background: rgba(100, 100, 100, 0.5);
+  color: white;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 5em;
+  height: 150px;
+  line-height: 150px;
+  margin: 100px 25px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.box-1 {
+  background-image: url(../material-base/ex-12/css3.png),
+    url(../material-base/ex-12/html5.png);
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 60px 60px, 50px 50px;
+}
+
+.box-2 {
+  background: linear-gradient(to bottom, red, green, blue);
+}
+
+.box-3 {
+  background: linear-gradient(10deg, red, green, blue);
+}
+
+.box-4 {
+  background-image: -webkit-radial-gradient(
+    0 0,
+    ellipse farthest-corner,
+    aqua,
+    red,
+    blue
+  );
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  width: 600px;
+}
+
+.box-5 {
+  background-image: -webkit-radial-gradient(
+    0 0,
+    ellipse farthest-corner,
+    aqua,
+    red,
+    blue
+  );
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  width: 600px;
+}

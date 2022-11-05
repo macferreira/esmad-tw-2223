@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+  width: 60em;
+}
+
+section {
+  margin: 1em;
+  padding: 2em;
+}
+
+#green {
+  background-color: #baffc9;
+}
+
+#orange {
+  background-color: #ffdfba;
+}
+
+#yellow {
+  background-color:   #ffffba;
+}
+
+#red {
+  background-color:   #ffb3ba;
+}
+
+#blue {
+  background-color:   #bae1ff;
+}
+
+ul { 
+  padding: 0; 
+}
+
+li {
+  background-color: white;
+  display: block;
+  margin: 1em;
+  padding: 1em;
+}

@@ -1,0 +1,57 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+}
+
+.box {
+  background: red;
+  color: white;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 5em;
+  height: 150px;
+  line-height: 150px;
+  margin: 100px 25px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.box-1 {
+  transition: background-color 2s linear 0.5s;
+}
+
+.box-1:hover {
+  background-color: purple;
+}
+
+.box-2 {
+  transition: color 3s ease 0.5s;
+}
+
+.box-2:hover {
+  color: black;
+}
+
+.box-3 {
+  transition: width 0.5s ease 3s;
+}
+
+.box-3:hover {
+  width: 200px;
+}
+
+.box-4 {
+  transition: width 0.5s, height 5s;
+}
+
+.box-4:hover {
+  height: 300px;
+  line-height: 300px;
+  transform: rotate(315deg);
+  width: 250px;
+}
