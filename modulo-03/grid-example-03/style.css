@@ -1,0 +1,34 @@
+.container {
+  background-color: #1a3c3d;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "menu1 content"
+    "menu2 content"
+    "menu2 footer";
+  padding: 5px;
+}
+.item {
+  background-color: #84a174;
+  color: black;
+  margin: 2px;
+  padding: 1em;
+  text-align: center;
+}
+.header {
+  grid-area: header;
+}
+.menu1 {
+  grid-area: menu1;
+}
+.menu2 {
+  grid-area: menu2;
+}
+.content {
+  grid-area: content;
+}
+.footer {
+  grid-area: footer;
+}
