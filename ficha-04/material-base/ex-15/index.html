@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TW-F04-EX15</title>
+    <style>
+        .calc {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="calculator" action="index.html">
+        <div class="calc">
+            <label>Square this number: <input type="number" id="square-input" size="2" /></label>
+            <button id="square-button">Calculate</button>
+        </div>
+        <div class="calc">
+            <label>Half this number: <input type="number" id="half-input" size="2" /></label>
+            <button id="half-button">Calculate</button>
+        </div>
+        <div class="calc">
+            <label>Fraction: <input type="number" id="percent1-input" size="2" /></label>
+            <label> Whole: <input type="number" id="percent2-input" size="2" /></label>
+            <button id="percent-button">Calculate</button>        
+        </div>
+        <div class="calc">
+            <label>Calculate area of circle with radius: <input type="number" id="area-input" size="2" /></label>
+            <button id="area-button">Calculate</button>
+        </div>
+        <div class="calc">
+            <button id="clear-entry-button">CE</button>
+        </div>
+    </form>
+
+    <div><h4>Result:</h4></div>
+    <div id="solution"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
