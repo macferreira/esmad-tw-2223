@@ -1,21 +1,21 @@
 body {
-  width: 60em;
   margin: 0 auto;
+  width: 60em;
 }
 
 form {
-  display: flex;
-  justify-content: space-between;
   background-color: teal;
   color: white;
-  padding: 1em;
+  display: flex;
+  justify-content: space-between;
   margin-top: 1em;
+  padding: 1em;
 }
 
 table {
   background-color: gold;
-  width: 100%;
   margin-top: 1em;
+  width: 100%;
 }
 
 th,

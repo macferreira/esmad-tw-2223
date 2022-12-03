@@ -11,5 +11,5 @@ for (let i = 0; i < items.length; i++) {
 
 // exercise c
 let image = document.createElement('img');
-image.src = 'http://placekitten.com/200/300';
+image.src = 'https://placekitten.com/200/300';
 document.body.appendChild(image);
