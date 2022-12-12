@@ -1,5 +1,7 @@
+/* eslint no-unused-vars: "off" */
+
 function jsStyle() {
-  let textElement = document.getElementById('text');
+  const textElement = document.getElementById('text');
 
   textElement.style.fontSize = '14pt';
   textElement.style.fontFamily = 'Comic Sans MS';

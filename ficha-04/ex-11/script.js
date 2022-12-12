@@ -1,5 +1,10 @@
+/* eslint
+no-console: ["error", { allow: ["log", "warn", "error"] }],
+no-plusplus: "off",
+no-unused-vars: "off" */
+
 function getFormvalue() {
-  let x = document.getElementById('form1');
+  const x = document.getElementById('form1');
 
   for (let i = 0; i < x.length; i++) {
     if (x.elements[i].value !== 'Submit') {

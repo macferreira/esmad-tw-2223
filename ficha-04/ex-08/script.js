@@ -1,15 +1,21 @@
+/* eslint
+guard-for-in: "off",
+no-console: ["error", { allow: ["log", "warn", "error"] }],
+no-restricted-syntax: "off",
+prefer-template: "off" */
+
 function countWordsAndChars(words) {
   // total number of words
-  let totalNumberWords = words.length;
+  const totalNumberWords = words.length;
 
   // total number of chars in all words
   let totalCharsInWords = 0;
-  for (let i in words) {
+  for (const i in words) {
     totalCharsInWords += words[i].length;
   }
 
   // average number of chars per word
-  let averageCharsInWords = totalCharsInWords / totalNumberWords;
+  const averageCharsInWords = totalCharsInWords / totalNumberWords;
 
   // output the results
   console.log('Total number of words: ' + totalNumberWords);
@@ -17,6 +23,6 @@ function countWordsAndChars(words) {
   console.log('Average number of chars per word: ' + averageCharsInWords);
 }
 
-let wordsArray = ['jogging', 'running', 'swimming'];
+const wordsArray = ['jogging', 'running', 'swimming'];
 console.log('Array: ' + wordsArray);
 countWordsAndChars(wordsArray);

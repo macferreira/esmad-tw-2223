@@ -1,5 +1,7 @@
+/* eslint no-console: ["error", { allow: ["log", "warn", "error"] }], prefer-template: "off" */
+
 function calculateDogAge(age) {
-  let dogYears = 7 * age;
+  const dogYears = 7 * age;
   console.log('Your doggie is ' + dogYears + ' years old in dog years!');
 }
 
@@ -8,8 +10,8 @@ calculateDogAge(0.5);
 calculateDogAge(12);
 
 // Alternate version with lambda function
-let calculateDogAgeAlt = (age) => {
-  let dogYears = 7 * age;
+const calculateDogAgeAlt = (age) => {
+  const dogYears = 7 * age;
   console.log('Your doggie is ' + dogYears + ' years old in dog years!');
 };
 

@@ -1,3 +1,8 @@
+/* eslint
+no-console: ["error", { allow: ["log", "warn", "error"] }],
+no-plusplus: "off",
+prefer-template: "off" */
+
 const choices = ['red', 'orange', 'pink', 'yellow'];
 
 // first output
@@ -8,7 +13,7 @@ for (let i = 0; i < choices.length; i++) {
 */
 // second output
 for (let i = 0; i < choices.length; i++) {
-  let choiceNum = i + 1;
+  const choiceNum = i + 1;
   let choiceNumSuffix;
 
   if (choiceNum === 1) {

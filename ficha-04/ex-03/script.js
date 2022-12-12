@@ -1,3 +1,5 @@
+/* eslint no-alert: "off", prefer-template: "off" */
+
 const x = 0;
 const y = -1;
 const z = 4;
