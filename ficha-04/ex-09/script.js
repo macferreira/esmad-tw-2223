@@ -1,16 +1,16 @@
 /* eslint
 no-console: ["error", { allow: ["log", "warn", "error"] }],
-no-plusplus: "off",
-prefer-template: "off" */
+no-plusplus: "off" */
 
 const choices = ['red', 'orange', 'pink', 'yellow'];
 
 // first output
 /*
 for (let i = 0; i < choices.length; i++) {
-  console.log('My #' + (i + 1) + ' choice is ' + choices[i])
+  console.log(`My #${i + 1} choice is ${choices[i]}`);
 }
 */
+
 // second output
 for (let i = 0; i < choices.length; i++) {
   const choiceNum = i + 1;
@@ -26,5 +26,5 @@ for (let i = 0; i < choices.length; i++) {
     choiceNumSuffix = 'th';
   }
 
-  console.log('My ' + choiceNum + choiceNumSuffix + ' choice is ' + choices[i]);
+  console.log(`My ${choiceNum} ${choiceNumSuffix} choice is ${choices[i]}`);
 }
