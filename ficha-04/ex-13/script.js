@@ -1,6 +1,4 @@
-/* eslint
-no-plusplus: "off",
-prefer-template: "off" */
+/* eslint no-plusplus: "off" */
 
 const books = [
   {
@@ -17,7 +15,7 @@ const books = [
 
 for (let i = 0; i < books.length; i++) {
   const bookP = document.createElement('p');
-  const bookDescription = document.createTextNode(books[i].title + ' by ' + books[i].author);
+  const bookDescription = document.createTextNode(`${books[i].title} by ${books[i].author}`);
 
   bookP.appendChild(bookDescription);
   document.body.appendChild(bookP);

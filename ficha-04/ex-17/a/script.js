@@ -1,4 +1,6 @@
-let value = prompt('What is the "official" name of JavaScript?', '');
+/* eslint no-alert: "off" */
+
+const value = prompt('What is the "official" name of JavaScript?', '');
 
 if (value === 'ECMAScript') {
   alert('Right!');

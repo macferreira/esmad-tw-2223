@@ -1,4 +1,6 @@
-let value = prompt('Escreva um número', 0);
+/* eslint no-alert: "off" */
+
+const value = prompt('Escreva um número', 0);
 
 if (value > 0) {
   alert(1);

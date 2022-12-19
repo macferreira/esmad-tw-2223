@@ -1,4 +1,9 @@
-let a = +prompt('a?', '');
+/* eslint
+default-case: "off",
+no-alert: "off"
+*/
+
+const a = +prompt('a?', '');
 
 switch (a) {
   case 0:

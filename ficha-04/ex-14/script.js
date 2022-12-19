@@ -1,12 +1,12 @@
 function outputText() {
-  let outputDiv = document.getElementById('output');
-  let text01 = document.getElementById('text01').value;
-  let text02 = document.getElementById('text02').value;
-  let text03 = document.getElementById('text03').value;
-  let outputText = text01 + ' ' + text02 + ' ' + text03;
+  const outputDiv = document.getElementById('output');
+  const text01 = document.getElementById('text01').value;
+  const text02 = document.getElementById('text02').value;
+  const text03 = document.getElementById('text03').value;
+  const output = `${text01} ${text02} ${text03}`;
 
-  outputDiv.innerHTML = outputText;
+  outputDiv.innerHTML = output;
 }
 
-let button = document.getElementById('output-button');
+const button = document.getElementById('output-button');
 button.addEventListener('click', outputText);

@@ -1,3 +1,8 @@
+/* eslint
+no-alert: "off",
+no-plusplus: "off"
+*/
+
 function showMultiplicationNumber(num = 1) {
   let result = '';
   for (let i = 1; i <= 10; i++) {
